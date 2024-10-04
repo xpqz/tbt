@@ -7,9 +7,11 @@ Token by token tracing (TBT) is an extension to the tracer that allows the devel
 
 TBT is now in the version 20 nightly builds, and the purpose of this document is to provide a "getting started" guide to how you use it. It's a powerful addition to the developer's toolbox: it allows for the introspection of complex expressions typed directly into the session, and can be used in conjunction with the traditional tracing mode to skip over lines you're not interested in, and dive into primitives level for the interesting bits. 
 
+**Note**: this document refers to the Windows version of Dyalog APL only.
+
 ## Getting started
 
-There are two primary means of starting a TBT session. Firstly, there is a new key-combo added, currently <kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd> (analogous to the <kbd>control</kbd>+<kbd>enter</kbd> used to start a "normal" trace). This key-combo can be used directly in the session. In the session, enter
+There are two primary means of starting a TBT session. Firstly, there is a new key-combo added (TP), currently bound to <kbd>shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd> (analogous to the <kbd>control</kbd>+<kbd>enter</kbd> used to start a "normal" trace). This key-combo can be used directly in the session. In the session, enter
 
 ```apl
 (+/÷≢)⍳10
@@ -65,7 +67,7 @@ The next UI element you may want to consider is _Function_, showing the current 
 
 There are several other UI elements available to you, including those that give you a view of the _previous_ function's arguments and results. Explore those as and when you feel that this is something you need. There is also a UI element showing the current bracket axis.
 
-An interesting optional aspect from the _Options_ menu is _Show History_, which, when enabled, also draw boxes in yellow, showing which bits of an expression have already been executed. If the utility of that isn't immediately clear, consider a complex tacit expression. The execution flow tends to "jump" around (one of the reasons that some people find tacit hard to read). With _Show History_ enabled, you can see wich bits of a tacit expression have been executed. Note that _Show History_ currently isn't fully completed, and may potentially be dropped from version 20. Do experiment with it, and see what you think.
+An interesting optional aspect from the _Options_ menu is _Show History_, which, when enabled, also draw boxes in yellow, showing which bits of an expression have already been executed. If the utility of that isn't immediately clear, consider a complex tacit expression. The execution flow tends to "jump" around (one of the reasons that some people find tacit hard to read). With _Show History_ enabled, you can see which bits of a tacit expression have been executed. Note that _Show History_ currently isn't fully completed, and may potentially be dropped from version 20. Do experiment with it, and see what you think.
 
 
 
