@@ -57,7 +57,7 @@ Arrow ← { ⍝ Draw an arrow head of size ⍵, direction given by ⍺
 Trace into the expression `1 Arrow 5` with <kbd>control</kbd>+<kbd>enter</kbd>. Execute the first line by hitting <kbd>enter</kbd> (or clicking the Execute Line symbol in the toolbar) like you normally would. On the next line, you can now use the _Next Primitive_ icon to trace through token by token (or use <kbd>
 shift</kbd>+<kbd>alt</kbd>+<kbd>enter</kbd>). 
 
-![Trace dfn](./img/trace-dfn.png)
+![Trace dfn](./img/trace-dfn-1080.png)
 
 In other words, the _Next Primitive_ icon is always present in the tracer. The new key-combo lets you open a tracer on an expression typed directly in the session that previously could not be traced into. 
 
